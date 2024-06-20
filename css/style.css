@@ -1,0 +1,642 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   
+
+}
+
+header .top{
+ display: flex;
+ justify-content: space-around;
+ padding: 10px;
+ border-bottom: 1px solid gray ;
+ 
+}
+
+
+header .top  .in{
+  position: relative;
+   
+    
+}
+.top .in::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: rgb(56, 50, 50);
+    top: -10px;
+    right: -100px;
+    height: 40px;
+}
+.top .in::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: rgb(56, 50, 50);
+    top: -10px;
+    left: -100px;
+    height: 40px;
+}
+
+
+.contant{
+    display: flex;
+    justify-content: space-around;
+}
+.contant .search{
+    display: flex;
+    gap: 20px;
+    border: 1px solid gray;
+    align-items: center;
+    margin: 10px ;
+    position: relative;
+}
+.contant .search i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: larger;
+   
+}
+.contant select{
+    margin-right: 50px;
+    color: brown;
+    font-weight: bold;
+}
+.contant ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+.contant li i{
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.contant li i:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+
+header .links{
+    background-color: black;
+    
+    padding: 10px;
+}
+.links ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+   
+}
+.links ul a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+}
+.links ul span i{
+    position: relative;
+    font-size: 24px;
+}
+.links ul span i::after{
+    content: "0";
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    padding: 2px 4px;
+    font-size: 15px;
+
+}
+.hero {
+    background-image: url(../image/bg.webp);
+    filter: blur(1px);
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+color: aliceblue;
+text-align: center;
+position: relative;
+
+}
+/* .hero img{
+    width: 250px;
+    height: 400px;
+    position: relative;
+} */
+
+.hero .head-title{
+ top: 20%;
+ left: 40%;
+ position: absolute;
+ background-color: rgba(16, 14, 12, 0.222);
+ width: 400px;
+ height: 130px;
+ border-radius: 15px;
+ padding: 20px 10px;
+ font-size: xx-large;
+  }
+.hero .head-title::before{
+    content: '<';
+    color: rgb(3, 6, 8);
+    position: absolute;
+    top: 80px;
+    left: -300px;
+    border: 2px solid rgb(27, 20, 20);
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 900;
+    
+}
+.hero .head-title::after{
+    content: '>';
+    color: rgb(3, 6, 8);
+    position: absolute;
+    top: 100px;
+    right:-300px;
+    border: 2px solid rgb(27, 20, 20);
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 900;
+    
+}
+.container{
+    margin: 0 80px;
+}
+.places{
+    margin: 60px 0;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+.images .place img{
+    border-radius: 50%;
+    height: 300px;
+    width: 100%;
+    
+   
+}
+
+.images .place{
+    position: relative; 
+    height: 300px;
+    width: 300px;
+    
+}
+.images .place:hover{
+    transform: scale(1.4);
+}
+.images .place::before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top:0;
+    left: 0;
+    background-color:rgba(35, 24, 24, 0.296);
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+.images .place:hover::before{
+    height: 0%;
+    width: 0%;
+}
+.images .place::after{
+    content: '';
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 0%;
+    background-color: rgba(147, 147, 141, 0.608);
+    padding: 1rem 0;
+    font-size: larger;
+    transition: 0.5s;
+
+}
+.images .place:hover::after{
+    content: 'HOUSE';
+    width: 100%;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 52px;
+    color: rgb(11, 50, 50);
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+   
+}
+.title::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: rgb(20, 40, 34);
+    top: 50px;
+    left: 50%;
+    margin: 20px 0;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+
+}
+.title:hover::after{
+    width: 200px;
+}
+ .category{
+    margin: 60px 0;
+ }
+ .category .boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;}
+
+.boxes .box {
+   text-align: center;
+   box-shadow: 0px 0px 12px 3px rgb(144, 140, 140);
+   padding: 1rem 1.5rem;
+   position: relative;
+}
+.boxes .box img{
+    height: 200px;
+    width: 200px;
+}
+.boxes .box h2{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.boxes .box ul{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.boxes .box ul li i{
+   color:rgb(167, 158, 158);
+   font-size: 20px;
+}
+.boxes .box button{
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 4px;
+    padding: 8px 12px ;
+    margin: 15px 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.boxes .box .foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxes .box .foot span i{
+color: brown;
+}
+.boxes .box::after{
+    content: 'SALE';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.boxes .box::before{
+    content: "\f0a4";
+    position: absolute;
+    bottom:3.5rem;
+    right: 3rem;
+   color: brown;
+   font-size: 22px;
+   font-weight: bold;
+   animation-name: toright;
+   animation-duration: 1s;
+   animation-iteration-count: infinite ;
+   visibility: hidden;
+
+   
+   
+}
+
+.cabin_title{
+    color:rgb(124, 126, 129);
+    font-weight: 700;
+    position: relative;
+}
+.cabin_title::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 3px;
+    bottom:-12px;
+    left:0;
+    background-color: rgb(64, 66, 68);
+}
+.cabin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    margin: 60px 0;
+}
+.cabin .box1{
+    flex-grow: 2;
+    flex-shrink: 1;
+    height: 400px;
+    position: relative;
+}
+.cabin .box1 img{
+    height: 400px;
+    width: 100%;
+}
+.cabin .box1 .text{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 400px;
+    top:0;
+    left:0;
+    background-color: rgba(42, 42, 34, 0.356);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+.cabin .box1 .text button{
+    background-color: brown;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.cabin .box2{
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 400px;
+    transition: 0.3s;
+}
+.cabin .box2:hover{
+    transform: scale(1.1,1.1);
+}
+.cabin .box img{
+    width: 100%;
+    height: 300px;
+}
+.cabin .box p{
+font-size: 20px;
+margin: 10px 0;
+color: brown;
+}
+.cabin .box .foot{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.cabin .box .foot span{
+color: gray;
+font-size: 22px;
+font-weight: bold;
+margin: 4px 0;
+display: block;
+
+}
+.cabin .box ul{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+}
+.cabin .box ul li i{
+color: brown;
+}
+.cabin .box .foot button{
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.cabin .box3{
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 400px;
+    transition: 0.3s;
+}
+.cabin .box3:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.destination .list{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    margin: 50px 0px;
+    align-items: center;
+    list-style: none;
+}
+.destination .list li{
+    color: gray;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.destination .list li:hover{
+    transform: translateY(-5px);
+    text-shadow: 2px 2px 2px gray;
+
+}
+.destination .baxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px
+}
+.destination .bax{
+    width: 23%;
+    position: relative;
+    height: 412px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+
+}
+body{
+    perspective: 700px;
+}
+.destination .bax:hover{
+transform: rotateY(180deg);
+}
+
+.destination .bax .front{
+    position: absolute;
+    width: 270px;
+    height: 410px;
+    background-color: black;
+    z-index: 1;
+    backface-visibility: hidden;
+    
+
+}
+
+
+.destination .bax img{
+    max-width: 100%;
+    height: 100%;
+}
+.destination .bax .text{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(41, 36, 36, 0.404);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 12px;
+}
+
+.destination .bax span{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+}
+.destination .bax ul li{
+ list-style: none;
+ color: gold;
+ display: inline;
+}
+.destination .bax p{
+    font-weight: bold;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 6px;
+    
+}
+.destination .bax .back{
+    position: absolute;
+    width: 270px;
+    height: 410px;
+    background-color: wheat;
+    text-align: left;
+    padding: 1rem;
+    transform: rotateY(180deg);
+}
+
+.destination .bax .back .rating span{
+    font-size: 1rem;
+    color: gray;
+}
+.destination .bax .back .size{
+    display: flex;
+    gap: 10px;
+    
+}
+.destination .bax .back .size li{
+ background-color: brown;
+ color: aliceblue;
+ padding: 5px 10px;
+ border-radius: 4px;
+ font-weight: bold;
+ cursor: pointer;
+ margin-top: 10px;
+}
+.destination .bax .back button{
+    background-color: brown;
+    color: aliceblue;
+    margin:10px 70px;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgba(249, 168, 47, 0.229);
+    height: 20rem;
+    position: relative;
+    margin-top: 30px;
+}
+footer .btn{
+    content: '';
+    position: absolute;
+    top:10px;
+    left:48%;
+    transform:translate(-55%, -60%) ;
+    rotate: 45deg;
+    border: 20px solid white;
+}
+footer img{
+    width: 10rem;
+    margin: 30px 0;
+
+}
+footer p{
+    margin-bottom: 10px;
+    color: rgb(58, 53, 53);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+footer .social{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(61, 45, 14, 0.564);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+footer .social span{
+    cursor: pointer;
+    font-weight: bold;
+}
